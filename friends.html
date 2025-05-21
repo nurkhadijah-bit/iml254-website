@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Friends">
-  <meta name="keywords" content="HTML,CSS">
-  <meta name="author" content="Nur Khadijah">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Friends" />
+    <meta name="keywords" content="HTML,CSS" />
+    <meta name="author" content="Nur Khadijah" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Website</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
 
@@ -14,7 +14,7 @@
         background-image: url("images/bgpastelblue.avif");
         background-size: cover;
         background-repeat: no-repeat;
-        font-family: "Arial", sans-serif;
+        font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
         color: #333;
@@ -22,7 +22,7 @@
 
       header img {
         width: 100%;
-        height: 350px;
+        max-height: 350px;
         object-fit: cover;
       }
 
@@ -42,7 +42,6 @@
         display: inline-block;
         font-weight: bold;
         font-size: 16px;
-        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s, color 0.3s;
       }
 
@@ -55,30 +54,75 @@
         background-color: rgba(255, 255, 255, 0.95);
         padding: 30px 20px;
         margin: 30px auto;
-        width: 90%;
-        max-width: 1000px;
-        text-align: center;
+        width: 95%;
+        max-width: 950px;
         border-radius: 12px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
       }
 
-      main h2 {
+      h2 {
         color: #3b8eb5;
-        font-size: 28px;
+        font-size: 26px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .friend-section {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .friend-section img {
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
         margin-bottom: 15px;
       }
 
-      main img {
-        width: 200px;
-        border-radius: 10px;
-        margin-bottom: 15px;
-      }
-
-      main p {
+      .friend-section p {
         font-size: 16px;
         line-height: 1.6;
-        background-color: #D9EEE1;
+        background-color: #d9eee1;
+        padding: 15px;
+        margin: 0 auto;
+        border-radius: 10px;
         font-family: monospace;
+        text-align: left;
+        max-width: 800px;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        margin: 20px 0;
+      }
+
+      .gallery img {
+        width: 160px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .button {
+        display: inline-block;
+        padding: 8px 14px;
+        background-color: #f8eca9;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        margin: 20px auto;
+      }
+
+      mark {
+        background-color: #fff2a8;
+        padding: 2px 6px;
       }
 
       footer {
@@ -87,21 +131,6 @@
         padding: 12px;
         font-size: 14px;
         color: #2b4d6e;
-      }
-
-      a.button {
-        padding: 1px 6px;
-        border: 1px outset buttonborder;
-        border-radius: 3px;
-        color: buttontext;
-        background-color: #f8eca9;
-        text-decoration: none;
-      }
-
-      h3 {
-        color: #3b8eb5;
-        font-size: 22px;
-        margin-bottom: 15px;
       }
     </style>
   </head>
@@ -122,54 +151,66 @@
     </nav>
 
     <main>
-        <h2>&#127804Iffah&#127804</h2>
-        <img src="images/iffah.jpg" alt="Iffah">
-        <p>I won’t give away her full name due to privacy, but I’ve always called her iffah! We met each other during the first week of high school orientation. 
-        My first impression towards her is that she’s friendly— main reason because she was the one who approached me first. Since then, 
-        we’ve became friends, and then we became close friends during the lockdown. Our friendship at the beginning was not so great, 
-        there has been ups and down but I believed that reason made our bond in friendship became even stronger than before :)
-        I would not trade our friendship over anything else <del>kind of cringe but it’s true.<del></p>
+      <div class="friend-section">
+        <h2>🌸 Iffah 🌸</h2>
+        <img src="images/iffah.jpg" alt="Iffah" />
+        <p>
+          I won’t give away her full name due to privacy, but I’ve always called
+          her Iffah! We met during the first week of high school orientation. My
+          first impression was that she’s friendly—she approached me first.
+          Since then, we’ve become friends, and then close friends during the
+          lockdown. Our friendship had ups and downs, but I believe those
+          moments made our bond stronger. I wouldn’t trade our friendship for
+          anything else. <del>Kind of cringe but it’s true.</del>
+        </p>
+      </div>
 
-    <br>
-    <hr>
-    <br>
+      <div class="friend-section">
+        <h2>🌹 Athirah 🌹</h2>
+        <img src="images/Athirah.jpg" alt="Athirah" />
+        <p>
+          I got to know her through Iffah.
+          <del>Such a small world isn’t it</del>. Our first conversation was in
+          a WhatsApp group made by Iffah so we could play games together. The
+          three of us loved the game *Sky: Children of the Light*, though at
+          first I wasn’t very close with Thirah. Since Sky requires teamwork, we
+          kept chatting in the group, asking for help with quests. Eventually,
+          we became close! Now she’s one of my closest friends—from high school
+          to university. I’ll always be grateful to Iffah, because thanks to
+          her, we became an awesome trio!
+        </p>
+      </div>
 
-    <h2>&#127801Athirah&#127801</h2>
-    <img src="images/Athirah.jpg" alt="Athirah">
-    <p>I got to know her through Iffah <del>such a small world isn’t it</del>. Our first conversation starts in a Whatsapp group made by Iffah because we want to play
-    games together. The three of us really loved game called Sky Children of The Light, but at that time I am not that close with her yet <i>(Thirah)</i>.
-    Sky Children of The Light is an interactive game, meaning that certain quests needs help with other players to complete. Hence, we kept chatting with each 
-    other in a Whatsapp group, asking to join the world to help with the quests, and we eventually became close! It was unexpected because now she has became 
-    my close buddy from highschool until we entered university. I will always forever be grateful to Iffah because why? We became an awesome trio!!!!!</p>
+      <h2>Awesome Moments of Us Together!</h2>
+      <div class="gallery">
+        <img src="images/trio1.jpg" alt="Trio 1" />
+        <img src="images/trio2.jpg" alt="Trio 2" />
+        <img src="images/trio3.jpg" alt="Trio 3" />
+      </div>
 
-    <br>
-    <hr>
-    <br>
-    <h2>Awesome Moment of Us Together !!</h2>
-    <br>
-    <img src="images/trio1.jpg" alt="Trio 1">
-    <img src="images/trio2.jpg" alt="Trio 2">
-    <img src="images/trio3.jpg" alt="Trio 3">
-    <br>
-    <hr>
-    <br>
+      <h2>Moments from Sky: Children of the Light</h2>
+      <div class="gallery">
+        <img src="images/moment1-sky.jpg" alt="Moment 1" />
+        <img src="images/moment2-sky.jpg" alt="Moment 2" />
+        <img src="images/Moment3-Sky.jpg" alt="Moment 3" />
+        <img src="images/moment4-sky.jpg" alt="Moment 4" />
+        <img src="images/Moment5-Sky.jpg" alt="Moment 5" />
+        <img src="images/moment6-sky.jpg" alt="Moment 6" />
+      </div>
 
-    <h2>Moments we played in Sky Children of The Light</h2>
-    <br>
-    <img src ="images/moment1-sky.jpg" alt="Moment 1- Sky">
-    <img src="images/moment2-sky.jpg" alt="Moment 2- Sky">
-    <img src="images/Moment3-Sky.jpg" alt="Moment 3- Sky">
-    <img src="images/moment4-sky.jpg" alt="Moment 4- Sky">
-    <img src="images/moment5-sky.jpg" alt="Moment 5- Sky">
-    <img src="images/moment6-sky.jpg" alt="Moment 6- Sky">
-<br><br>
+      <div style="text-align: center">
+        <a href="https://www.thatskygame.com/" class="button" target="_blank"
+          >Sky Children Of The Light</a
+        >
+      </div>
 
-<a href="https://www.thatskygame.com/" class="button">Sky Children Of The Light</a>
-<br>
-<br>
- <p><mark>Additional note, I have other friends that I hold dear in my heart but I won’t put it here because of privacy :)</mark></p>
-<br>
-</main>
+      <p style="text-align: center; margin-top: 20px">
+        <mark
+          >Additional note: I have other friends that I hold dear in my heart,
+          but I won’t put them here for privacy :)</mark
+        >
+      </p>
+    </main>
 
     <footer>
       &copy; 2025 Nur Khadijah
